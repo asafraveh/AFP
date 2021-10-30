@@ -1,21 +1,21 @@
 package MaineCoine;
 
-class USD extends Coine{
-    private final double value=3.52;
-            @Override
-    public double getValue(){
-        return value;
-            }
-
+abstract class USD extends Coin {
+    private final double value = 3.52;
+    double Usdvalue;
     @Override
-    public double getValu() {
-        return 0;
+    public double getUsdValu() {
+        double Usdvalue=value;
+        return Usdvalue;
     }
 
-    @Override
-    public double calculate(double imput){
-        return imput* getValue();
-    }
+@Override
+    public double calculate(double input, double getUsdValu){
+        return input*getUsdValu();
+
+}
 
 
 }
+
+
